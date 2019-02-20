@@ -1,0 +1,113 @@
+/*css grid*/
+/*Mobiel*/
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "bar"
+    "grafiek"
+    "tempratuur"
+    "tabel"
+    "circle1"   
+    "circle2"
+    "circle3"; 
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.header {
+  grid-area: header;
+}
+
+.brandstof {
+  grid-area: bar;
+}
+
+.afstand {
+  grid-area: grafiek;
+}
+
+.tempratuur{
+  grid-area: tempratuur;
+}
+
+.water {
+  grid-area: circle1;
+}
+
+.eten {
+  grid-area: circle2;
+}
+
+.nood {
+  grid-area: circle3;
+}
+
+/*Tablet*/
+@media only screen and (min-width: 601px){
+  body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+      "header header"
+      "bar grafiek"
+      "tempratuur circle1"
+      "circle2 circle3";  
+      margin-right: 4%;
+      margin-left: 4%; 
+  }  
+
+  h1 {
+    font-size: 50px;
+  } 
+
+  #brandstof {
+    margin-right: 2%;
+  }
+
+  #afstand {
+    margin-left: 2%;
+  }
+}
+
+/*Laptop*/
+@media only screen and (min-width: 1024px){
+  body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+      "header header header"
+      "bar grafiek grafiek"
+      "tempratuur tempratuur tempratuur"
+      "circle1 circle2 circle3";
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  h1 {
+    font-size: 55px;
+  } 
+
+  #afstand {
+    width: 100%;
+  }
+
+  #tempratuur {
+    width: 102%;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1363px){
+  body {
+    display: grid;
+  }
+
+  h1 {
+    font-size: 60px;
+  } 
+}
+

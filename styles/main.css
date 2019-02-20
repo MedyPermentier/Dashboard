@@ -1,0 +1,71 @@
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*:before,
+*:after{
+	box-sizing: inherit;
+}
+
+body {
+	background-color: #2e2e2e;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*SpaceX titel*/
+h1 {
+	color: white;
+	text-align: center;
+	margin-bottom: 9%;
+	margin-top: 5%;
+	font-family: 'Orbitron', sans-serif;
+}
+
+/*Brandstof grafiek uitlijning*/
+#brandstof {
+	padding-right: 5%;
+	margin-bottom: 9%;
+	height: 403px;	
+	max-width: 100%;
+}
+
+/*Afstand grafiek uitlijning*/
+#afstand {
+	padding-right: 5%;
+	margin-bottom: 9%;
+	height: 403px;	
+	
+}
+
+/*Temperatuur grafiek uitlijning*/
+#tempratuur {
+	padding-right: 5%;
+	margin-bottom: 9%;
+}
+
+/*Uitlijningen van de donut cirkels*/
+#water {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 9%;
+	width: 80%;
+	height: 80%;
+}
+
+#eten {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 9%;
+	width: 80%;
+	height: 80%;
+}
+
+#nood {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 9%;
+	width: 80%;
+	height: 80%;
+}
+

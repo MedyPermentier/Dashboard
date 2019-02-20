@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>SpaceX Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" href="styles/main.css" rel="stylesheet" />
+		<link type="text/css" href="styles/layout.css" rel="stylesheet" />
+		<style> @import url('https://fonts.googleapis.com/css?family=Montserrat');</style>
+		<style>@import url('https://fonts.googleapis.com/css?family=Orbitron');</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	</head>
+	<body>
+		<!-- header -->
+		<header class="grid-item header">
+			<h1>SpaceX</h1>					
+	  	</header>
+
+		<!-- brandstof grafiek -->
+	  	<div class="grid-item brandstof" id="brandstof">	  		
+	  		<canvas id="brandstofChart"></canvas>
+	  	</div>
+
+	  	<script src="scripts/brandstof.js"></script>
+
+	  	<!-- afstand grafiek -->
+	  	<div class="grid-item afstand" id="afstand">
+	  		
+	  		<canvas id="afstandChart"></canvas>
+	  	</div>
+
+	  	<script src="scripts/afstandchart.js"></script>
+
+	  	<!-- snelheid grafiek -->
+	  	<div class="grid-item tempratuur" id="tempratuur">	
+	  		<canvas id="myChart"></canvas>
+	  	</div>
+
+	  	<script src="scripts/tempratuur.js"></script>
+
+	  	<!-- water cirkel -->
+	  	<div class="grid-item water" id="water">
+	  		<canvas id="waterChart"></canvas>
+	  	</div>
+
+	  	<script src="scripts/waterchart.js"></script>
+
+	  	<!-- eten cirkel -->
+	  	<div class="grid-item eten" id="eten">
+	  		<canvas id="etenChart"></canvas>
+	  	</div>
+
+	  	<script src="scripts/etenchart.js"></script>
+
+	  	<!-- nood cirkel -->
+	  	<div class="grid-item nood" id="nood">
+	  		<canvas id="noodChart"></canvas>
+	  	</div>
+
+	  	<script src="scripts/noodchart.js"></script>
+	 </body>
+</html>
